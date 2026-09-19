@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Dosvak">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2545"/>
+      <stop offset="1" stop-color="#17406D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+  <!-- the D -->
+  <path fill="#FFFFFF" fill-rule="evenodd"
+        d="M 286 236 H 536 A 276 276 0 0 1 536 788 H 286 Z
+           M 392 340 V 684 H 536 A 172 172 0 0 0 536 340 Z"/>
+  <!-- the process inside the D: start event -> task -> gateway -->
+  <g stroke="#2EC4B6" stroke-width="10" fill="none" stroke-linecap="round">
+    <line x1="460" y1="512" x2="500" y2="512"/>
+    <line x1="580" y1="512" x2="614" y2="512"/>
+  </g>
+  <circle cx="438" cy="512" r="24" fill="none" stroke="#2EC4B6" stroke-width="10"/>
+  <rect x="500" y="486" width="80" height="52" rx="12" fill="#2EC4B6"/>
+  <path d="M 650 476 L 686 512 L 650 548 L 614 512 Z" fill="none" stroke="#2EC4B6" stroke-width="10" stroke-linejoin="round"/>
+</svg>
