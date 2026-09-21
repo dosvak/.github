@@ -28,6 +28,7 @@ Packages for both targets are in every repository (`packages/` and `packages/cp4
 
 | Repository | What it is | Target |
 |---|---|---|
+| [baw-mcp](https://github.com/dosvak/baw-mcp) | **BAW Knowledge MCP server** - IBM BAW / CP4BA authoring knowledge for AI agents (IBM Bob, Claude Code, Cursor, any MCP client): authoring method and checklist, verified engine facts, REST API catalogue and map, TWX structure, coach guidelines, CP4BA differences, install runbooks, app designs and the 156 analyzer rules - **public endpoint: `https://bawmcp.dosvak.com/mcp`**, no account | BAW, CP4BA |
 | [generic-ui-toolkit](https://github.com/dosvak/generic-ui-toolkit) | 47 coach view controls (layouts, navigation, charts and maps, viewers and exports, inputs, display and logic, composites) without commercial libraries, plus a showcase app with a demo page per control | BAW, CP4BA |
 | [twx-code-analyzer](https://github.com/dosvak/twx-code-analyzer) | static analysis of `.twx` exports: 156 rules, findings ranked by impact, toolkit usage, diagrams, TWX search, snapshot comparison; desktop app, CLI, embeddable Java facade, WAR for a shared server, and a BAW process app | any BAW export; app for BAW |
 | [operations-cp4ba](https://github.com/dosvak/operations-cp4ba) | operations dashboard with 31 administration tools (instances, tokens, timers, tasks, event manager, containers, snapshots, deployment, health, users) on the Process, Operations and federated REST APIs through a reusable REST Framework service; Operations REST and Operations for traditional servers | CP4BA, BAW |
@@ -40,6 +41,12 @@ Packages for both targets are in every repository (`packages/` and `packages/cp4
 | [baw-json](https://github.com/dosvak/baw-json) | server-side JavaScript library converting business objects to JSON and back for every BAW type, shipped as a toolkit, with the test app that validated it against real REST payloads | BAW, CP4BA |
 | [baw-operations-utilities](https://github.com/dosvak/baw-operations-utilities) | task counts per process application (REST script, SQL, JavaScript API and a process app), closed-task and unnamed-snapshot cleanup for CP4BA | BAW, CP4BA |
 | [bpm.tips](https://github.com/dosvak/bpm.tips) | the community Q&A site for IBM BPM / BAW / CP4BA | - |
+
+## For AI agents
+
+Add `{ "mcpServers": { "baw-knowledge": { "url": "https://bawmcp.dosvak.com/mcp" } } }` to your MCP client (IBM Bob `~/.bob/settings/mcp.json`,
+Claude Code `claude mcp add --transport http baw-knowledge https://bawmcp.dosvak.com/mcp`, Cursor / VS Code settings) and your agent can search
+and read the knowledge behind every project on this page - see [baw-mcp](https://github.com/dosvak/baw-mcp) for the tools and terms.
 
 ## Using the packages
 
