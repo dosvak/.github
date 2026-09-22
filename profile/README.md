@@ -40,7 +40,22 @@ Packages for both targets are in every repository (`packages/` and `packages/cp4
 | [headless-process-portal](https://github.com/dosvak/headless-process-portal) | Angular replacement of Process Portal on the engine REST API only (task lists, headless task forms, dashboards) - **live demo: https://portaldemo.dosvak.com** (demo accounts on the login page), with a sample process application | BAW, CP4BA |
 | [baw-json](https://github.com/dosvak/baw-json) | server-side JavaScript library converting business objects to JSON and back for every BAW type, shipped as a toolkit, with the test app that validated it against real REST payloads | BAW, CP4BA |
 | [baw-operations-utilities](https://github.com/dosvak/baw-operations-utilities) | task counts per process application (REST script, SQL, JavaScript API and a process app), closed-task and unnamed-snapshot cleanup for CP4BA | BAW, CP4BA |
+| [sla-deadline-monitor](https://github.com/dosvak/sla-deadline-monitor) | overdue and soon-due tasks across applications in lateness buckets, reassignment to a user or group, CSV | BAW, CP4BA |
+| [team-workload-balancer](https://github.com/dosvak/team-workload-balancer) | open tasks per person and team with overdue counts, the tasks of a person, reassign or return to the team | BAW, CP4BA |
+| [team-audit](https://github.com/dosvak/team-audit) | teams and members of every installed application, empty and single-member teams flagged, exposed items, user membership lookup | BAW, CP4BA |
+| [process-smoke-test-runner](https://github.com/dosvak/process-smoke-test-runner) | JSON test cases started over REST, polled to the expected state, pass / fail report, re-check, cleanup - regression checks inside the server | BAW, CP4BA |
+| [instance-timeline](https://github.com/dosvak/instance-timeline) | process instances of a period on a Gantt-style timeline grouped by application, overdue and at-risk colouring | BAW, CP4BA |
+| [orphan-zombie-cleaner](https://github.com/dosvak/orphan-zombie-cleaner) | idle instances, instances of inactive or not installed snapshots, overdue tasks nobody holds, old finished instances - bulk terminate / delete | BAW, CP4BA |
+| [environment-variable-diff](https://github.com/dosvak/environment-variable-diff) | environment variable values of two snapshots or two servers side by side over the Operations REST API | BAW 20+, CP4BA |
+| [deployment-runbook-generator](https://github.com/dosvak/deployment-runbook-generator) | a Markdown deployment checklist generated from an installed snapshot: package facts, environment variables, team bindings, exposed items, activation steps | BAW 20+, CP4BA |
+| [business-data-search](https://github.com/dosvak/business-data-search) | cross-application business data search on the registered aliases, by instance or by task, with CSV export | BAW, CP4BA |
+| [notification-manager](https://github.com/dosvak/notification-manager) | per-user subscriptions to application events (new tasks, team tasks, overdue tasks, failed / completed instances) with an e-mail digest; subscriptions stored as shared saved searches | BAW, CP4BA |
 | [bpm.tips](https://github.com/dosvak/bpm.tips) | the community Q&A site for IBM BPM / BAW / CP4BA | - |
+
+The ten applications from **sla-deadline-monitor** to **notification-manager** are the *kit apps*: each is generated from a ~200-line
+Python program on the twxkit generator (standard library only, no base export), verified on the labs, and re-buildable with your own
+defaults through the [BAW Knowledge MCP server](https://github.com/dosvak/baw-mcp) (`get_package`, `get_tool('build_<acr>.py')`,
+`get_topic('howto-kit-utility-app-recipes')`). Every repository carries the package, the design document and the recipe collection.
 
 ## For AI agents
 
