@@ -55,6 +55,7 @@ Packages for both targets are in every repository (`packages/` and `packages/cp4
 | [event-manager-monitor](https://github.com/dosvak/event-manager-monitor) | event manager tasks (timers, UCA runs, messages) with pause / resume, delete and replay, schedulers, and the scheduled undercover agents of every snapshot | BAW, CP4BA |
 | [snapshot-lifecycle](https://github.com/dosvak/snapshot-lifecycle) | toolkit dependency tree of every application snapshot and a rollback advisor per container (running instances, open tasks, flags, advice) | BAW, CP4BA |
 | [expense-approval-kit](https://github.com/dosvak/expense-approval-kit) | sample business process with user tasks (lanes per team, manager review with Approve / Reject, revision loop, payment task) generated with twxkit - the worked example for building processes | BAW, CP4BA |
+| [ui-controls-kit](https://github.com/dosvak/ui-controls-kit) | dashboard exercising every UI Toolkit control (inputs, display, structure, events, charts, data export) with working bindings, plus the controls catalogue - generated with twxkit | BAW, CP4BA |
 | [bpm.tips](https://github.com/dosvak/bpm.tips) | the community Q&A site for IBM BPM / BAW / CP4BA | - |
 
 The fourteen applications from **sla-deadline-monitor** to **snapshot-lifecycle** are the *kit apps*: each is generated from a ~200-line
