@@ -50,9 +50,13 @@ Packages for both targets are in every repository (`packages/` and `packages/cp4
 | [deployment-runbook-generator](https://github.com/dosvak/deployment-runbook-generator) | a Markdown deployment checklist generated from an installed snapshot: package facts, environment variables, team bindings, exposed items, activation steps | BAW 20+, CP4BA |
 | [business-data-search](https://github.com/dosvak/business-data-search) | cross-application business data search on the registered aliases, by instance or by task, with CSV export | BAW, CP4BA |
 | [notification-manager](https://github.com/dosvak/notification-manager) | per-user subscriptions to application events (new tasks, team tasks, overdue tasks, failed / completed instances) with an e-mail digest; subscriptions stored as shared saved searches | BAW, CP4BA |
+| [process-performance](https://github.com/dosvak/process-performance) | step durations (average, median, P95 per activity), instance durations, throughput per day with a chart, observed variants | BAW, CP4BA |
+| [role-inbox](https://github.com/dosvak/role-inbox) | the inbox of one role across every application | BAW, CP4BA |
+| [event-manager-monitor](https://github.com/dosvak/event-manager-monitor) | event manager tasks (timers, UCA runs, messages) with pause / resume, delete and replay, schedulers, and the scheduled undercover agents of every snapshot | BAW, CP4BA |
+| [snapshot-lifecycle](https://github.com/dosvak/snapshot-lifecycle) | toolkit dependency tree of every application snapshot and a rollback advisor per container (running instances, open tasks, flags, advice) | BAW, CP4BA |
 | [bpm.tips](https://github.com/dosvak/bpm.tips) | the community Q&A site for IBM BPM / BAW / CP4BA | - |
 
-The ten applications from **sla-deadline-monitor** to **notification-manager** are the *kit apps*: each is generated from a ~200-line
+The fourteen applications from **sla-deadline-monitor** to **snapshot-lifecycle** are the *kit apps*: each is generated from a ~200-line
 Python program on the twxkit generator (standard library only, no base export), verified on the labs, and re-buildable with your own
 defaults through the [BAW Knowledge MCP server](https://github.com/dosvak/baw-mcp) (`get_package`, `get_tool('build_<acr>.py')`,
 `get_topic('howto-kit-utility-app-recipes')`). Every repository carries the package, the design document and the recipe collection.
