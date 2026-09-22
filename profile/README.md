@@ -54,12 +54,14 @@ Packages for both targets are in every repository (`packages/` and `packages/cp4
 | [role-inbox](https://github.com/dosvak/role-inbox) | the inbox of one role across every application | BAW, CP4BA |
 | [event-manager-monitor](https://github.com/dosvak/event-manager-monitor) | event manager tasks (timers, UCA runs, messages) with pause / resume, delete and replay, schedulers, and the scheduled undercover agents of every snapshot | BAW, CP4BA |
 | [snapshot-lifecycle](https://github.com/dosvak/snapshot-lifecycle) | toolkit dependency tree of every application snapshot and a rollback advisor per container (running instances, open tasks, flags, advice) | BAW, CP4BA |
+| [expense-approval-kit](https://github.com/dosvak/expense-approval-kit) | sample business process with user tasks (lanes per team, manager review with Approve / Reject, revision loop, payment task) generated with twxkit - the worked example for building processes | BAW, CP4BA |
 | [bpm.tips](https://github.com/dosvak/bpm.tips) | the community Q&A site for IBM BPM / BAW / CP4BA | - |
 
 The fourteen applications from **sla-deadline-monitor** to **snapshot-lifecycle** are the *kit apps*: each is generated from a ~200-line
 Python program on the twxkit generator (standard library only, no base export), verified on the labs, and re-buildable with your own
 defaults through the [BAW Knowledge MCP server](https://github.com/dosvak/baw-mcp) (`get_package`, `get_tool('build_<acr>.py')`,
-`get_topic('howto-kit-utility-app-recipes')`). Every repository carries the package, the design document and the recipe collection.
+`get_topic('howto-kit-utility-app-recipes')`). Every repository carries the package, the design document and the recipe collection. **expense-approval-kit** is the process
+sample: a complete approval process with user tasks generated the same way (`get_topic('howto-build-a-process-with-user-tasks')`).
 
 ## For AI agents
 
